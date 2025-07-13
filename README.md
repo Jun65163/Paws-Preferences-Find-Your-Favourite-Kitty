@@ -45,6 +45,7 @@ _Note: A fixed number of cat pictures (10) was assumed for this project._
 - Presence of "like" and "dislike" icons increases the intuitiveness of "liking" and "disliking" cat pictures, guiding the user to perform their intended actions.
 - Change in background after "liking" and "disliking" 10 cat pictures allows the user to understand the end of cat picture review.
 - Number of cat pictures liked was displayed on top of the screen to emphasize the information
+- Ensure mobile browser address bar does not cover web content, allowing the page screen to remain still and ease of interaction with the UI.
 
 ## Animations
 - Dynamic change in background and icon colour (with respect to user horizontal swipe action) further empahsizes user action for "liking" and "disliking", allowing the user to confirm their intended action before finalizing it.
