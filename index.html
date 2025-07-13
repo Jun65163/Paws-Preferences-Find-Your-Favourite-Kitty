@@ -1,0 +1,66 @@
+<!--
+Requirements: 
+1. A single-page web application where users can view a stack of cat images (done)
+2. Users should be able to swipe right to indicate “like” and swipe left to indicate “dislike”. (done)
+3. Once the user has gone through all the cats, show a summary of how many cats they liked and display the ones they liked. (done)
+4. The cat pictures should be sourced from Cataas (https://cataas.com/). (done)
+5. The interface should work smoothly on mobile devices, especially focusing on an intuitive and pleasant mobile viewing experience. (done)
+6. Beyond this, how you implement the app — including tech choice, UI/UX design, animations, and any added functionality — is completely up to you.
+
+Notes: You can assume a fixed number of cat pictures (e.g. 10-20) for the exercise.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paws & Preferences: Find Your Favourite Kitty</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header-container">
+            <p></p>
+        </div>
+        
+        <img alt="cat_img" src="" />
+
+        <div class="heart-icon-wrapper">
+            <svg class="svg-heart-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 475.528 475.528"
+                xml:space="preserve">
+                <circle cx="237.764" cy="237.764" r="237.5" fill="#43ff65" />
+
+                <g>
+                    <g>
+                        <path d="M237.376,436.245l0.774,0.976c210.94-85.154,292.221-282.553,199.331-367.706
+			c-92.899-85.154-199.331,30.953-199.331,30.953h-0.774c0,0-106.44-116.107-199.331-30.953
+			C-54.844,154.658,26.437,351.092,237.376,436.245z" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <div class="cross-icon-wrapper">
+            <svg class="svg-cross-icon" viewBox="0 0 475.528 475.528" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="237.764" cy="237.764" r="237.5" fill="#ff0000" />
+
+                <g>
+                    <path
+                        d="M810.65984 170.65984q18.3296 0 30.49472 12.16512t12.16512 30.49472q0 18.00192-12.32896 30.33088l-268.67712 268.32896 268.67712 268.32896q12.32896 12.32896 12.32896 30.33088 0 18.3296-12.16512 30.49472t-30.49472 12.16512q-18.00192 0-30.33088-12.32896l-268.32896-268.67712-268.32896 268.67712q-12.32896 12.32896-30.33088 12.32896-18.3296 0-30.49472-12.16512t-12.16512-30.49472q0-18.00192 12.32896-30.33088l268.67712-268.32896-268.67712-268.32896q-12.32896-12.32896-12.32896-30.33088 0-18.3296 12.16512-30.49472t30.49472-12.16512q18.00192 0 30.33088 12.32896l268.32896 268.67712 268.32896-268.67712q12.32896-12.32896 30.33088-12.32896z" />
+                </g>
+            </svg>
+        </div>
+
+        <div class="desc-container">
+            <p></p>
+        </div>
+    </div>
+
+    <script src="paws_and_pref.js" defer></script>
+</body>
+
+</html>
