@@ -5,60 +5,60 @@
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  height: 100dvh;
+  width: 100dvw;
   background-color: #000;
   font-family: Arial, sans-serif;
 }
 
 .main-container {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   transition: background-color 0.3s linear;
   overflow: hidden;
 }
 .main-container .header-container {
-  width: 100vw;
-  height: 10vh;
+  width: 100dvw;
+  height: 10dvh;
   background-color: rgba(4, 156, 4, 0.74);
   color: #fff;
-  padding: 1vw;
-  font-size: 1.25vw;
+  padding: 1dvw;
+  font-size: 1.25dvw;
   text-align: center;
 }
 @media (max-width: 600px) {
   .main-container .header-container {
-    padding: 3vw;
-    height: 10vh;
-    font-size: 5vw;
+    padding: 3dvw;
+    height: 10dvh;
+    font-size: 5dvw;
   }
 }
 .main-container img {
-  width: 100vw;
-  height: 90vh;
+  width: 100dvw;
+  height: 90dvh;
   position: absolute;
   object-fit: contain;
   z-index: 0;
 }
 .main-container .heart-icon-wrapper {
   position: absolute;
-  right: 25vw;
-  bottom: 25vh;
+  right: 25dvw;
+  bottom: 25dvh;
   background-color: rgba(0, 0, 0, 0);
   z-index: 1;
 }
 .main-container .heart-icon-wrapper .svg-heart-icon {
-  width: 10vw;
-  height: 10vh;
+  width: 10dvw;
+  height: 10dvh;
   vertical-align: middle;
   fill: white;
   overflow: hidden;
 }
 @media (max-width: 600px) {
   .main-container .heart-icon-wrapper .svg-heart-icon {
-    width: 20vw;
-    height: 10vh;
+    width: 20dvw;
+    height: 10dvh;
   }
 }
 .main-container .heart-icon-wrapper .svg-heart-icon g {
@@ -67,28 +67,28 @@ body {
 }
 @media (max-width: 600px) {
   .main-container .heart-icon-wrapper {
-    bottom: 13vh;
-    right: 10vw;
+    bottom: 13dvh;
+    right: 10dvw;
   }
 }
 .main-container .cross-icon-wrapper {
   position: absolute;
-  left: 25vw;
-  bottom: 25vh;
+  left: 25dvw;
+  bottom: 25dvh;
   background-color: rgba(0, 0, 0, 0);
   z-index: 1;
 }
 .main-container .cross-icon-wrapper .svg-cross-icon {
-  width: 10vw;
-  height: 10vh;
+  width: 10dvw;
+  height: 10dvh;
   vertical-align: middle;
   fill: white;
   overflow: hidden;
 }
 @media (max-width: 600px) {
   .main-container .cross-icon-wrapper .svg-cross-icon {
-    width: 20vw;
-    height: 10vh;
+    width: 20dvw;
+    height: 10dvh;
   }
 }
 .main-container .cross-icon-wrapper .svg-cross-icon g {
@@ -97,42 +97,42 @@ body {
 }
 @media (max-width: 600px) {
   .main-container .cross-icon-wrapper {
-    bottom: 13vh;
-    left: 10vw;
+    bottom: 13dvh;
+    left: 10dvw;
   }
 }
 .main-container .desc-container {
-  width: 100vw;
-  height: 20vh;
+  width: 100dvw;
+  height: 20dvh;
   position: absolute;
-  bottom: 0vh;
-  padding: 2vw;
+  bottom: 0dvh;
+  padding: 2dvw;
   background-color: rgba(10, 10, 10, 0.6);
   color: #fff;
 }
 @media (max-width: 600px) {
   .main-container .desc-container {
-    height: 10vh;
+    height: 10dvh;
   }
 }
 
 .cat-tag {
   color: #dbdbdb;
-  font-size: 2vw;
+  font-size: 2dvw;
 }
 @media (max-width: 600px) {
   .cat-tag {
-    font-size: 4vw;
+    font-size: 4dvw;
   }
 }
 
 .cat-date {
   color: #fff;
-  font-size: 2vw;
+  font-size: 2dvw;
 }
 @media (max-width: 600px) {
   .cat-date {
-    font-size: 4vw;
+    font-size: 4dvw;
   }
 }
 
