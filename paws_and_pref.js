@@ -275,8 +275,15 @@ function reviewSwipeListener(img) {
                     console.log('isReviewAllCats:', isReviewAllCats);
                     currIdx = 0; // Reset currIdx for cats_like
                     mainContainer.style.backgroundColor = 'rgba(0, 255, 0, 0.5)';
-                    console.log("index:".concat(currIdx), cats_like[currIdx]);
-                    showCat(cats_like[currIdx]);
+                    if (cats_like.length < 1) {
+                        mainContainer.innerHTML = '';
+                        mainContainer.appendChild(headerContainer);
+                        headerParagraph.innerHTML = "<b>Total Cats Liked: ".concat(cats_like.length, "<br>\n                            You Didn't Like Any Cat<b>");
+                    }
+                    else {
+                        console.log("index:".concat(currIdx), cats_like[currIdx]);
+                        showCat(cats_like[currIdx]);
+                    }
                 }
                 else {
                     isReviewCurrCat = false;
@@ -461,8 +468,15 @@ function reviewDragListener(img) {
                     console.log('isReviewAllCats:', isReviewAllCats);
                     currIdx = 0; // Reset currIdx for cats_like
                     mainContainer.style.backgroundColor = 'rgba(0, 255, 0, 0.5)';
-                    console.log("index:".concat(currIdx), cats_like[currIdx]);
-                    showCat(cats_like[currIdx]);
+                    if (cats_like.length < 1) {
+                        mainContainer.innerHTML = '';
+                        mainContainer.appendChild(headerContainer);
+                        headerParagraph.innerHTML = "<b>Total Cats Liked: ".concat(cats_like.length, "<br>\n                            You Didn't Like Any Cat<b>");
+                    }
+                    else {
+                        console.log("index:".concat(currIdx), cats_like[currIdx]);
+                        showCat(cats_like[currIdx]);
+                    }
                 }
                 else {
                     isReviewCurrCat = false;
