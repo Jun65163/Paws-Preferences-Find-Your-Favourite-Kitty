@@ -313,8 +313,16 @@ function reviewSwipeListener(img: HTMLImageElement) {
 
                     mainContainer.style.backgroundColor = 'rgba(0, 255, 0, 0.5)';
 
-                    console.log(`index:${currIdx}`, cats_like[currIdx]);
-                    showCat(cats_like[currIdx]);
+                    if (cats_like.length < 1) {
+                        mainContainer.innerHTML = '';
+                        mainContainer.appendChild(headerContainer);
+                        headerParagraph.innerHTML = `<b>Total Cats Liked: ${cats_like.length}<br>
+                            You Didn't Like Any Cat<b>`;
+                    }
+                    else {
+                        console.log(`index:${currIdx}`, cats_like[currIdx]);
+                        showCat(cats_like[currIdx]);
+                    }
                 }
                 else {
                     isReviewCurrCat = false;
@@ -527,8 +535,16 @@ function reviewDragListener(img: HTMLImageElement) {
 
                     mainContainer.style.backgroundColor = 'rgba(0, 255, 0, 0.5)';
 
-                    console.log(`index:${currIdx}`, cats_like[currIdx]);
-                    showCat(cats_like[currIdx]);
+                    if (cats_like.length < 1) {
+                        mainContainer.innerHTML = '';
+                        mainContainer.appendChild(headerContainer);
+                        headerParagraph.innerHTML = `<b>Total Cats Liked: ${cats_like.length}<br>
+                            You Didn't Like Any Cat<b>`;
+                    }
+                    else {
+                        console.log(`index:${currIdx}`, cats_like[currIdx]);
+                        showCat(cats_like[currIdx]);
+                    }
                 }
                 else {
                     isReviewCurrCat = false;
